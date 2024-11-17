@@ -1,1 +1,1 @@
-# UTNFRA_SO_2do_Parcial_-Gonzalez_Pineda-
+# UTNFRA_SO_2do_Parcial_Gonzalez_Pineda
