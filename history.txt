@@ -1,0 +1,568 @@
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+git clone https://github.com/Loon04/UTNFRA_SO_2do_Parcial_Gonzalez_Pineda.git
+ls -l
+./UTN-FRA_SO_Examenes/202406/script_Precondicion.sh
+source ~/.bashrc
+ls -l
+sudo fdisk /dev/sdb
+sudo fdisk -l
+ls -l
+tree RTA_Examen_20241118/
+exit
+ls -l
+tree RTA_Examen_20241118/
+tree UTN-FRA_SO_Examenes/
+clear
+sudo fdisk -l
+sudo fdisk /dev/sdc
+sudo wipefs -a /dev/sdc1
+sudo wipefs -a /dev/sdc2
+sudo pvcreate /dev/sdc1
+sudo pvcreate /dev/sdc2
+pvs
+sudo pvs
+sudo vgcreate vg_datos /dev/sdc1 /dev/sdc2
+vsg
+sudo vgs
+sudo pvs
+sudo lvcreate -L 5M vg_datos -n lv_docker
+sudo lvcreate -L 1.5G vg_datos -n lv_workareas
+sudo fdisk -l 
+sudo pvs
+sudo lvs
+sudo lvcreate -L 1.5G vg_datos -n lv_workareas
+sudo lvcreate -L 1.498G vg_datos -n lv_workareas
+sudo lvcreate -L 1.495G vg_datos -n lv_workareas
+sudo lvcreate -L 1.5G vg_datos -n lv_workareas
+sudo lvcreate -L 1G vg_datos -n lv_workareas
+sudo lvs
+sudo pvs
+sudo fdisk -l 
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_workareas
+sudo lsblk -f
+sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker/
+sudo mount /dev/mapper/vg_datos-lv_workareas /work/
+sudo mount /dev/mapper/vg_datos-lv_workareas /work
+pwd
+ls -l
+mkdir work
+ls -l
+sudo mount /dev/mapper/vg_datos-lv_workareas /work
+rm -r work
+ls -l
+mkdir /work 
+sudo mkdir /work 
+ls -l
+sudo mount /dev/mapper/vg_datos-lv_workareas /work
+sudo systemctl restart docker
+sudo systemctl status docker
+ls -l
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo fdisk -l
+vim RTA_Examen_20241118/Punto_A.sh 
+vi /etc/fstab
+sudo mount -a
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo fdisk -l
+df -h
+sudo fdisk /dev/sde
+free -h
+sudo fdisk /dev/sde
+free -h
+sudo fdisk -ll
+sudo mkswap /dev/sde1
+free -h
+sudo swapon /dev/sde1
+free -h
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo lsblk
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo wipefs -a /dev/sde1
+sudo fdisk /dev/sde
+free -h
+sudo fdisk -l
+sudo swapoff /dev/sde1
+swapon --show
+free -h
+sudo fdisk /dev/sde
+sudo wipefs -a /dev/sde1
+sudo pvcreate /dev/sde1
+sudo vgcreate vg_temp /dev/sde1
+sudo vgs
+sudo lvcreate -L 512M vg_temp -n lv_swap
+sudo lvcreate -L 510M vg_temp -n lv_swap
+sudo lvcreate -L 508M vg_temp -n lv_swap
+sudo lvs
+sudo pvs
+sudo fdisk -l
+sudo mkfs.ext4 /dev/mapper/vg_temp-lv_swap
+sudo fdisk -l
+sudo fdisk -
+sudo fdisk 
+sudo lsblk -f
+sudo lsblk
+free -h
+sudo mkswap /dev/sde1
+swapon -s
+lsof | grep /dev/sde1
+sudo lsof | grep /dev/sde1
+fdisk -l
+sudo fdisk -l
+sudo mkswap /dev/mapper/vg_temp-lv_swap
+free -h
+sudo mkswap /dev/mapper/vg_temp-lv_swap
+sudo fdisk /dev/sde
+sudo fdisk -l
+sudo umount /dev/mapper/vg_temp-lv_swap
+exit
+sudo fdisk -l
+sudo fdisk /dev/sde
+exit
+sudo fdisk /dev/sde
+sudo pvcreate /dev/sde1
+sudo pvs
+sudo vgcreate vg_temp /dev/sde1
+sudo pvs
+sudo lvcreate -L 512M vg_temp -n lv_swap
+sudo lvcreate -L 508M vg_temp -n lv_swap
+sudo lvs
+free -h
+sudo fdisk -l
+sudo mkswap /dev/mapper/vg_temp-lv_swap
+gree -h
+free -h
+sudo swapon /dev/sde1
+swapon -a
+free -h
+sudo swapon /dev/mapper/vg_temp-lv_swap
+free -h
+sudo lsblk 
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker
+sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker/
+sudo mount /dev/mapper/vg_datos-workareas /work
+ls -l
+sudo mount /dev/mapper/vg_datos-lv_workareas /work
+sudo mount -a
+df -h
+sudo lsblk 
+vim vim RTA_Examen_20241118/
+vim vim RTA_Examen_20241118/Punto_A.sh 
+ls -l
+tree RTA_Examen_20241118/
+cat RTA_Examen_20241118/Punto_A.sh 
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo swapon -s
+sudo fdisk -l
+sudo lsblk
+exit
+sudo lsblk
+sudo systemctl restart docker
+sudo systemctl status docker
+exit
+ls -l
+ls -l RTA_Examen_20241118/
+sudo lsblk
+ls -l
+sudo rm -r vim
+ls -l
+exit
+ls -l /usr/local/bin/
+cat /usr/local/bin/gonzalezAltaUser-Groups.sh
+sudo touch /usr/local/bin/gonzalezAltaUser-Groups.sh
+ls -l /usr/local/bin/
+ls -l
+sudo mkdir RTA_Examen_20241118/bash_script
+ls -l RTA_Examen_20241118/
+sudo touch RTA_Examen_20241118/bash_script/Lista_Usuarios.txt
+ls -l RTA_Examen_20241118/
+tree RTA_Examen_20241118/
+ls -l/usr/local/bin/
+ls -l/usr/local/bin
+ls -l /usr/local/bin
+vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+sudo rm -r RTA_Examen_20241118/bash_script/Lista_Usuarios.txt
+sudo rm -r RTA_Examen_20241118/bash_script
+ls -l RTA_Examen_20241118/
+cd UTN-FRA_SO_Examenes/202406/docker/
+ls -l
+cat index.html 
+vim index.html 
+sudo netstat -putona
+sudo systemctl status docker
+sudo netstat -putona
+sudo apt update
+sudo apt install net-tools
+sudo netstat -putona
+sudo netstat -putona |grep ":22" 
+docker images
+sudo netstat -putona | grep ':80'
+sudo systemctl status apache2
+curl ifconfig.me
+hostname -I
+ip addr show wlp2s0
+ip addr show
+sudo netstat -putona
+sudo systemctl status apache2
+docker ps
+sudo systemctl disable apache2
+sudo netstat -putona | grep ':80'
+sudo netstat -putona 
+docker ps -a
+docker rm 9d9
+docker ps -a
+docker images
+sudo netstat -putona | grep '80'
+ls -l
+touch dockerfile
+ls -l
+vim dockerfile 
+docker build -t loon04/web1-gonzalez . 
+docker ps
+docker images list
+docker image list
+docker pushdocker push loon04/web1-gonzalez
+docker push loon04/web1-gonzalez
+docker login
+docker push loon04/web1-gonzalez
+touch run.sh
+vim run.sh 
+docker ps
+vim run.sh 
+docker run  -d -p 8080:80 loon04/web1-gonzalez
+docker ps
+docker stop a55
+docker ps
+docker run  -d -p 80:80 loon04/web1-gonzalez
+curl localhost:80
+docker stop 945
+docker ps
+vim run.sh 
+cd ..
+cd ansible/
+ls -l
+tree 
+sudo mkdir -p tmp/2do_parcial/{alumno,equipo}
+ls -l
+tree tmp
+cd ..
+vls -l
+ls -l
+vim RTA_Examen_20241118/Punto_D.sh 
+cd UTN-FRA_SO_Examenes/
+cd 202406/ansible/
+ls -l
+cat README.md 
+ls -l
+cat playbook.yml 
+reset; ansible-playbook -i inventory/hosts playbook.yml
+ls -l
+cd ..
+wpd
+pwd
+cd ..
+ls -l
+ssh-keygen -t ed25519
+ls -la
+cd .ssh
+exit
+ls -l
+cd UTN-FRA_SO_Examenes/202406/ansible/
+ls -l
+cat playbook.yml 
+tree 
+ls -l
+sudo apt update
+pip install Jinja2
+ls -l
+ls -l roles/
+tree roles/
+sudo mdkir roles/2do_parcial/templates
+sudo mkdir roles/2do_parcial/templates
+tree roles/
+sudo touch roles/2do_parcial/templates/datos_alumno.j2
+tree roles/
+vim roles/2do_parcial/templates/datos_alumno.j2
+sudo rm -r roles/2do_parcial/templates/datos_alumno.j2
+tree roles/
+cd ..
+ls -l
+cd ..
+ls -l
+sudo lsblk
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo fdisk -l
+sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker/
+sudo mount /dev/mapper/vg_datos-workareas /work
+sudo mount /dev/mapper/vg_datos-lv_workareas /work
+sudo mkfs.ext4 /dev/mapper/vg_temp-lv_swap
+sudo mkswap /dev/mapper/vg_temp-lv_swap
+sudo swapon /dev/mapper/vg_temp-lv_swap
+sudo lsblk
+cat /etc/fstab
+echo "/dev/mapper/vg_datos-lv_docker /var/lib/docker/ ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/mapper/vg_datos-lv_workareas /work ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/mapper/vg_temp-lv_swap [SWAP] ext4 defaults 0 0" | sudo tee -a /etc/fstab
+sudo lsblk
+cat /etc/fstab
+sudo mount -a
+vim RTA_Examen_20241118/Punto_A.sh 
+echo "/dev/mapper/vg_temp-lv_swap SWAP ext4 defaults 0 0" | sudo tee -a /etc/fstab
+sudo mount -a
+vim RTA_Examen_20241118/Punto_A.sh 
+ls -l
+ls -l UTN-FRA_SO_Examenes/202406/bash_script/
+cat UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+vim RTA_Examen_20241118/Punto_B.sh 
+vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+vim RTA_Examen_20241118/Punto_B.sh
+cat /usr/local/bin/gonzalezAltaUser-Groups.sh 
+ls -l /usr/local/bin/
+sudo chmod 755 /usr/local/bin/gonzalezAltaUser-Groups.sh 
+ls -l /usr/local/bin/
+cd /usr/local/bin/
+ls -l
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo grep R2P /etc/shadow
+cat /etc/passwd
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+cat /etc/passwd
+cat /etc/group
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+cat /etc/group
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+cat /etc/group
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+cat /etc/group
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+cat /etc/shadow
+sudo cat /etc/shadow
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo cat /etc/shadow
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo cat /etc/shadow
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo cat /etc/shadow
+sudo vim /usr/local/bin/gonzalezAltaUser-Groups.sh 
+./gonzalezAltaUser-Groups.sh 
+sudo cat /etc/shadow
+cd ..
+ls -l
+cd home/
+ls -l
+cd anahi/
+ls -l
+sudo lsblk 
+sudo fdisk -l
+sudo umount /dev/mapper/vg_temp-lv_swap /var/lib/docker
+sudo lsblk 
+sudo umount /dev/mapper/vg_temp-lv_workareas /work
+sudo cat cat /etc/fstab
+sudo vim /etc/fstab
+sudo cat /etc/fstab
+sudo vim /etc/fstab
+sudo cat /etc/fstab
+sudo lsblk 
+sudo umount /dev/mapper/vg_temp-lv_swap [SWAP]
+sudo lsblk 
+sudo fdisk /dev/mapper/vg_temp-lv_swap
+sudo fdisk -l
+sudo fdisk /dev/sdd
+sudo fdisk -l
+sudo fdisk /dev/sde
+exit
+sudo lsblk
+sudo fdisk -l
+sudo fdisk /dev/sdd
+sudo fdisk -l
+sudo fdisk /dev/sde
+sudo fdisk -l
+sudo lsblk
+ls -l
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo fdisk /dev/sdd
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo lsblk
+sudo fdisk -l
+sudo pvcreate /dev/sdd1 -ff
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo wipefs -a /dev/sdd1
+sudo pvs
+sudo pvcreate /dev/sdd1 -ff
+sudo pvs
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo vgcreate vg_datos /dev/sdd1
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo lvcreate -L 5M vg_datos -n lv_docker
+sudo lvcreate -L 1.5G vg_datos -n lv_workareas
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo fdisk -l
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_workareas
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo mount /dev/mapper/vg_datos/lv_docker /var/lib/docker/
+sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker/
+sudo mount /dev/mapper/vg_datos-lv_workareas /work/
+vim RTA_Examen_20241118/Punto_A.sh 
+echo "/dev/mapper/vg_datos-lv_docker /var/lib/docker ext4 defaults 0 0" | sudo tee -a /etc/fstab
+echo "/dev/mapper/vg_datos-lv_workareas /work ext4 defaults 0 0" | sudo tee -a /etc/fstab
+sudo cat /etc/fstab
+sudo fdisk -l
+sudo lsblk
+sudo mount -a
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo fdisk -l
+sudo fdisk /dev/sde
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo wipefs -a /dev/sde1
+sudo pvcreate /dev/sde1 -ff
+sudo pvs
+vgcreate vg_temp /dev/sde1
+sudo vgcreate vg_temp /dev/sde1
+sudo lvcreate -L 512M vg_temp -n lv_swap
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo vgs
+sudo fdisk -l
+sudo mkfs.ext4 /dev/mapper/vg_temp-lv_swap
+vim RTA_Examen_20241118/Punto_A.sh 
+sudo mkswap /dev/mapper/vg_temp-lv_swap
+sudo swapon /dev/mapper/vg_temp-lv_swap
+free -h
+sudo lsblk
+vim RTA_Examen_20241118/Punto_A.sh 
+cat /etc/fstb
+cat /etc/fstab 
+sudo mount -a
+ls -l
+cd UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+ls -l
+sudo mkdir fran
+ls -l
+git status
+git add .
+git commit -m "hola"
+git push
+ssh-keygen -t ed25519 -C "anahigonzalezj@gmail.com"
+clip < ~/.ssh/id_ed25519.pub
+git push
+cd ..
+sudo rm r UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+sudo rm -r UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+ls -l
+ssh-keygen -t ed25519
+cd .ssh
+-s -l
+ls -l
+cat id_ed25519.pub 
+exit
+cd .ssh
+cd ..
+ls -l
+git clone git@github.com:Loon04/UTNFRA_SO_2do_Parcial_Gonzalez_Pineda.git
+ls -l
+cd UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+cat hola.txt
+touch hola.txt
+ls -l
+git status
+ls -l
+cd ..
+ls -l
+sudo cp -r RTA_Examen_20241118/ UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+ls -l UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+sudo cp -r UTN-FRA_SO_Examenes/202406/ UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+ls -l UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+tree
+cd UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+tree
+rm -r hola.txt 
+ls -l
+vim RTA_Examen_20241118/Punto_C.sh 
+sudo vim RTA_Examen_20241118/Punto_C.sh 
+git status
+git add .
+git status
+git commit -m "resolucion examen"
+git status
+git push
+history -a
+sudo cp -r $HOME/.bash_history UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+sudo cp $HOME/.bash_history UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+cd ..
+sudo cp -r $HOME/.bash_history UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+cd UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+ls -l
+cd ..
+history -a
+sudo cp -r $HOME/.bash_history UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+ls -l UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+cd UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+tree
+cd ..
+cat ~/.bash_history
+sudo cp -r ~/.bash_history UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+cd UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+ls -l
+tree
+ls -l
+ls -a
+git status
+git add .
+cat .bash_history 
+sudo cat .bash_history 
+git add .
+git status
+git add -f ~/.bash_history
+git status
+ls -l
+ls -a
+cd ..
+cat ~/.bash_history
+cd UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+ls -a
+rm -r .bash_history 
+sudo rm -r .bash_history 
+ls -a
+sudo cp -r $HOME/.bash_history UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+sudo cp -r /.bash_history UTNFRA_SO_2do_Parcial_Gonzalez_Pineda/
+touch history.txt
+ls -l
+cd ..
